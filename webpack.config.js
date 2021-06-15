@@ -17,8 +17,15 @@ module.exports={
 // 五大概念导出
 //  入口
 entry:{
+    commonCss:'./src/js/commonCss.js',
+    dom:'./src/js/common/dom.js',
+    http:'./src/js/common/http.js',
+    utils:'./src/js/common/utils.js',
+    captcha:'./src/lib/captcha/captcha-mini.js',
     home:'./src/js/home.js',
     login:'./src/js/login.js',
+    advertPage:'./src/js/advertPage.js',
+    registerPage:'./src/js/registerPage.js',
 },
 // 出口
 output:{
@@ -67,15 +74,29 @@ module:{
 },
 // 插件  plugins
 plugins:[
+    // 首页
     new HtmlWebpackPlugin({
        template: './src/page/home.html',
        filename:'home.html',
-       chunks:['home']
+       chunks:['home','commonCss']
     }),
+    // 登录页
     new HtmlWebpackPlugin({
        template: './src/page/login.html',
        filename:'login.html',
-       chunks:['login']
+       chunks:['login','commonCss','dom','http','utils']
+    }),
+    // 广告
+    new HtmlWebpackPlugin({
+       template: './src/page/advertPage.html',
+       filename:'advertPage.html',
+       chunks:['advertPage','commonCss','dom']
+    }),
+    // 注册      
+    new HtmlWebpackPlugin({
+       template: './src/page/registerPage.html',
+       filename:'registerPage.html',
+       chunks:['registerPage','commonCss','dom','http','captcha','utils']
     }),
     new MiniCssExtractPlugin({  
         filename: 'css/[name].css' // 输出到css文件夹里
@@ -94,7 +115,7 @@ devServer: {
     port: 666,  // 端口  8080 80  8081 8082
     open: true, // 自动打开服务
     publicPath: '/', // 静态资源查找路径
-    openPage: 'index.html', // 打开的页面
+    openPage: 'home.html', // 打开的页面
   },
   target: 'web', // 目标是浏览器
 }

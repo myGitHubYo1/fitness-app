@@ -1,0 +1,77 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* 头部 */
+header{
+    width: 100%;
+    height: 44px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 44px;
+}
+/* 内容 */
+main{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    /* height: 808px; */
+    /* background-color: red; */
+    background: url("../imgs/advertisement-bg.jpg")no-repeat top center;
+    background-size: cover;
+}
+.skip-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 105px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff;
+    margin-top: 28px;
+    margin-right: 14px;
+   
+}
+.timeBox{
+    flex: 2;
+    border-right: 1px solid #bbb;
+    text-align: center;
+}
+.text{
+    flex: 3;
+    text-align: center;
+}
+.text-box{
+    display: flex;
+    justify-content: space-around;
+      position: absolute;
+      /* bottom: 130px; */
+      color: #fff;
+      width: 100%;
+      height: 64px;
+      font-size: 0;
+      opacity: 0;
+      bottom: 324px; 
+      animation: textAnimation 1s forwards;
+}
+/*定义动画*/
+@keyframes textAnimation {
+    from {
+      font-size: 0;
+      opacity: 0;
+      bottom: 324px;
+    }
+    to {
+      font-size: 48px;
+      opacity: 1;
+      bottom: 130px;
+    }
+  }

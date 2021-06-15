@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* 头部 */
+header{
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+/* 内容 */
+main{
+    flex: 1;
+    padding: 15px 20px;
+    width: 100%;
+    background: green;
+}
+/* 今日加打卡  */
+.clockToday{
+    display: flex;
+    width:100%;
+    height: 150px;
+    background: yellow;
+}
+/*  今日排名*/
+.today-box{
+    width: 150px;
+    height: 150px;
+    margin-right: 22px;
+    border-radius: 15px;
+    background: pink;
+}
+/* 累计打卡 */
+.clockIn{
+    flex: 1;
+    border-radius: 15px;
+    background: #ccc;
+}
+/* 运动数据+累计徽章 */
+.motionBadge{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background: red;
+}
+/* 运动数据 */
+.sportData{
+    width: 180px;
+    height: 110px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background: purple;
+}
+/* 累计徽章 */
+.badge{
+    flex: 1;
+    border-radius: 15px;
+    background: yellow;
+}
+/* 课程训练 */
+.train-box{
+    width: 100%;
+    height: 110px;
+    border-radius: 15px;
+    background: coral;
+}
+/* 户外跑步 */
+.outdoorRun{
+    width: 100%;
+    height: 110px;
+    border-radius: 15px;
+    background: #ccc;
+}
+footer{
+    width: 100%;
+    height: 77px;
+    background: red;
+}
