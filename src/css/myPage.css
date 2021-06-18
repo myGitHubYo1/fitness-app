@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 49px;
+    background: blue;
+    color: #fff;
+    text-align: center;
+    line-height: 49px;
+}
+.cont-box{
+    flex: 1;
+    overflow-y: scroll;
+}
+.navBox{
+    flex: 0.1;
+    font-size: 24px;
+}
+.textBox{
+    flex: 0.9;
+}
+.keepBtn{
+    width: 100%;
+    height: 50px;
+    /* background: #ccc; */
+    padding: 0 15px;
+    margin-top: 50px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background: blue;
+    color: #fff;
+   
+}

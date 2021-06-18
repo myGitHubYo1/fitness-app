@@ -22,10 +22,16 @@ entry:{
     http:'./src/js/common/http.js',
     utils:'./src/js/common/utils.js',
     captcha:'./src/lib/captcha/captcha-mini.js',
+    swiper:'./src/lib/swiper/swiper-bundle.js',
     home:'./src/js/home.js',
     login:'./src/js/login.js',
     advertPage:'./src/js/advertPage.js',
     registerPage:'./src/js/registerPage.js',
+    sports:'./src/js/sports.js',
+    about:'./src/js/about.js',
+    introduction:'./src/js/introduction.js',
+    myPage:'./src/js/myPage.js',
+    weui:'./src/lib/weui/weui.js'
 },
 // 出口
 output:{
@@ -78,7 +84,7 @@ plugins:[
     new HtmlWebpackPlugin({
        template: './src/page/home.html',
        filename:'home.html',
-       chunks:['home','commonCss']
+       chunks:['home','commonCss','dom','http','utils','swiper']
     }),
     // 登录页
     new HtmlWebpackPlugin({
@@ -97,6 +103,30 @@ plugins:[
        template: './src/page/registerPage.html',
        filename:'registerPage.html',
        chunks:['registerPage','commonCss','dom','http','captcha','utils']
+    }),
+    // 运动
+    new HtmlWebpackPlugin({
+       template: './src/page/sports.html',
+       filename:'sports.html',
+       chunks:['sports','commonCss','dom','http','utils']
+    }),
+    // 我的
+    new HtmlWebpackPlugin({
+       template: './src/page/about.html',
+       filename:'about.html',
+       chunks:['about','commonCss','dom','http','utils']
+    }),
+    // 课程介绍
+    new HtmlWebpackPlugin({
+       template: './src/page/introduction.html',
+       filename:'introduction.html',
+       chunks:['introduction','commonCss','dom','http','utils']
+    }),
+    // 个人详情页
+    new HtmlWebpackPlugin({
+       template: './src/page/myPage.html',
+       filename:'myPage.html',
+       chunks:['myPage','commonCss','dom','http','utils','weui']
     }),
     new MiniCssExtractPlugin({  
         filename: 'css/[name].css' // 输出到css文件夹里

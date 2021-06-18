@@ -8,29 +8,65 @@
 </head>
 <body>
     <!-- 头部 -->
-<header></header>
+<div class="top-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">Slide 1</div> -->
+            <img src="../imgs/course-img04.jpg" alt="" class="swiper-slide">
+            <img src="../imgs/course-img05.jpg" alt="" class="swiper-slide">
+            <img src="../imgs/course-img01.jpg" alt="" class="swiper-slide">
+            
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 <!-- 内容 -->
 <main>
     <!-- 今日加打卡 -->
     <div class="clockToday">
        <!-- 今日排名 -->
-       <div class="today-box"></div>
+       <div class="today-box">
+           <!-- 排名文字 -->
+           <p>今日排名</p>
+      <div class="father-box">
+           <!-- 图标 -->
+           <div class="icon-box"></div>
+           <!-- 名次 -->
+           <div class="num-box">6</div>
+     </div>
+       </div>
        <!-- 累计打卡 -->
-       <div class="clockIn"></div>
+       <div class="clockIn">
+        <!-- 累计天数 -->
+        <p>累计打卡<span class="daySpan"></span> 天</p>
+         <!-- 图标 -->
+         <div class="fatherBox">
+             <div class="icon1-box"></div>
+         <!-- 今日打卡 -->
+         <div class="todayClock"><p>今日打卡</p></div>
+         </div>
+       </div>
     </div>
     <!-- 运动数据+累计徽章 -->
     <div class="motionBadge mt20">
         <!-- 运动数据 -->
-        <div class="sportData"></div>
+        <div class="sportData">运动数据</div>
         <!-- 累计徽章 -->
-        <div class="badge"></div>
+        <div class="badge">
+            <p>累计运动徽章</p>
+            <div class="father-box">
+                 <div class="icon2-box"></div>
+            <div class="box"><span class="lastSpan">3</span>枚</div>
+            </div>
+           
+        </div>
     </div>
     <!-- 课程训练 -->
-    <div class="train-box mt20"></div>
+    <div class="train-box mt20">课程训练</div>
     <!-- 户外跑步 -->
-    <div class="outdoorRun mt20"></div>
+    <div class="outdoorRun mt20">户外跑步</div>
 </main>
-<!-- 底部 -->
-<footer></footer>
+
 </body>
 </html>

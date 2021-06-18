@@ -22,12 +22,12 @@ $http.post("/users/login",data,function(res){
     console.log(res);
     
     if(res.status===0){
-        utils.tost(1, 1, '登录成功');
+        utils.tost(1,'登录成功');
         // 将数据存储到本地
         localStorage.setItem("user",JSON.stringify(res.data.user));
         location.href='./home.html';
     }else{
-        utils.tost(0, 1, '用户密码或账号错误,请重新登录');
+        utils.tost(0,'用户密码或账号错误,请重新登录');
     }
 
 
