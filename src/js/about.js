@@ -15,7 +15,7 @@ let numbersDom=document.querySelector(".numbers");
 let numbers2=document.querySelector(".numbers2");
 let portrait=document.querySelector(".portrait");
 
-
+let dataText=document.querySelector(".data-text");
 let fileBtn=document.querySelector(".fileBtn");
 // 监听事件
 fileBtn.addEventListener("change",function(res){
@@ -117,6 +117,9 @@ $http.post("/users/userEdit",data,function(res){
 
 }
 
-
+// 监听事件
+dataText.addEventListener("click",function(ev){
+    location.href='./mySports.html'
+})
 
 })

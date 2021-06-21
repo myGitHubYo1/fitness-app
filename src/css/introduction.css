@@ -1,6 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
+   
 }
 /* 头部 */
 .top-box{
@@ -10,15 +11,65 @@ body{
     color: #fff;
     background: #4294ff;
 }
+.top-box img{
+    width: 100%;
+    height: 371px;
+}
+
 /* 内容 */
 .cont-box{
     flex: 1;
+  padding: 25px; 
+ 
+}
+li{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.fatherSpan{
+
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.minSpan{
+  margin-right: 20px;
+  
+}
+.timeSpan{
+    margin-right: 20px;
+}
+.numSpan{
     
 }
-
+.lastLi{
+    display: flex;
+}
+.weekDa{
+    flex: 0.5;
+    border-right: 1px dashed #ccc;
+}
+.userBox{
+    flex: 0.5;
+    padding-left: 27px;
+}
 /* 底部 */
 .down-box{
     width: 100%;
     height: 55px;
+    /* background: blue; */
+    padding: 0 32px;
+    margin-bottom: 15px;
+
+}
+.startBtn{
+    width: 100%;
+    height: 55px;
     background: blue;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #fff;
 }

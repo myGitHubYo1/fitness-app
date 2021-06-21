@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;  
+}
+.topBox{
+    padding: 5px 10px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(66, 148, 255, 100);
+    font-size: 20px;
+    color: #fff;
+}
+.bigBox{
+    padding: 25px  15px;
+    width: 100%;
+    height: 290px;
+    background-color: rgba(66, 148, 255, 100);
+}
+li{
+    margin-bottom: 30px;
+}
+.sports-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.lastSpan{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+}
+.twoLi{
+    display: flex;
+
+}
+.leftBox{
+    flex: 0.5;
+    border-right: 1px dashed #fff;
+}
+.rightBox{
+    padding-left: 15px;
+    flex: 0.5;
+}
+.lastLi{
+    display: flex;
+    justify-content: space-between;;
+}
+.numBox{
+    flex: 1;
+    overflow-y: scroll;
+    /* background: pink; */
+}

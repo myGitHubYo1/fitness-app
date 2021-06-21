@@ -23,6 +23,7 @@ entry:{
     utils:'./src/js/common/utils.js',
     captcha:'./src/lib/captcha/captcha-mini.js',
     swiper:'./src/lib/swiper/swiper-bundle.js',
+      weui:'./src/lib/weui/weui.js',
     home:'./src/js/home.js',
     login:'./src/js/login.js',
     advertPage:'./src/js/advertPage.js',
@@ -31,7 +32,8 @@ entry:{
     about:'./src/js/about.js',
     introduction:'./src/js/introduction.js',
     myPage:'./src/js/myPage.js',
-    weui:'./src/lib/weui/weui.js'
+    player:'./src/js/player.js',
+    mySports:'./src/js/mySports.js'
 },
 // 出口
 output:{
@@ -127,6 +129,18 @@ plugins:[
        template: './src/page/myPage.html',
        filename:'myPage.html',
        chunks:['myPage','commonCss','dom','http','utils','weui']
+    }),
+    // 我的运动数据页
+    new HtmlWebpackPlugin({
+       template: './src/page/mySports.html',
+       filename:'mySports.html',
+       chunks:['mySports','commonCss','dom','http','utils','weui']
+    }),
+    // 视频播放页
+    new HtmlWebpackPlugin({
+       template: './src/page/player.html',
+       filename:'player.html',
+       chunks:['player','commonCss','dom']
     }),
     new MiniCssExtractPlugin({  
         filename: 'css/[name].css' // 输出到css文件夹里
